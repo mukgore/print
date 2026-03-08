@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>중간고사 학습 계획표</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap');
+:root{--ink:#1a1a2e;--light:#f8f9f0;--border:#c8c8a0;--math:#457b9d;--eng:#2d6a4f;--kor:#e76f51;--sci:#6b4226;--soc:#6a4c93;--his:#9b5de5;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans KR',sans-serif;background:#ccc;color:var(--ink);padding:20px;}
+.page{background:var(--light);max-width:920px;margin:0 auto 32px;padding:40px;box-shadow:0 4px 24px rgba(0,0,0,.13);}
+.hdr{border-bottom:3px solid var(--ink);padding-bottom:14px;margin-bottom:22px;display:flex;justify-content:space-between;align-items:flex-end;}
+.hdr h1{font-size:20px;font-weight:700;}
+.hdr .sub{font-size:11px;color:#888;font-family:'DM Mono',monospace;}
+.sec{font-size:10px;font-weight:700;letter-spacing:2px;color:#999;margin-bottom:10px;font-family:'DM Mono',monospace;text-transform:uppercase;}
+table{width:100%;border-collapse:collapse;font-size:11.5px;margin-bottom:22px;}
+th{background:var(--ink);color:#fff;padding:8px 10px;text-align:left;font-size:11px;font-weight:600;}
+td{padding:9px 10px;border:1px solid var(--border);vertical-align:top;line-height:1.7;}
+.lbl{background:#eaeadc!important;font-weight:700;white-space:nowrap;}
+.badge{display:inline-block;padding:1px 7px;border-radius:3px;font-size:10px;font-weight:700;color:#fff;margin-bottom:3px;}
+.math{background:var(--math);}.eng{background:var(--eng);}.kor{background:var(--kor);}.sci{background:var(--sci);}.soc{background:var(--soc);}.his{background:var(--his);}
+.tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:22px;}
+.tcard{border:1.5px solid var(--ink);padding:14px;text-align:center;}
+.tcard .sub2{font-size:12px;font-weight:700;margin-bottom:4px;}
+.tcard .dur{font-family:'DM Mono',monospace;font-size:20px;font-weight:500;}
+.tcard .note{font-size:10px;color:#888;margin-top:4px;}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:4px;}
+.box{border:1.5px solid var(--border);padding:14px;font-size:11.5px;line-height:1.8;}
+.box .bt{font-weight:700;margin-bottom:6px;}
+.muted{color:#888;font-size:10.5px;}
+.fn{font-size:10.5px;color:#888;margin-top:6px;line-height:1.7;}
+@media print{body{background:#fff;padding:0;}.page{box-shadow:none;margin:0;padding:28px;max-width:100%;page-break-after:always;}}
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page">
+  <div class="hdr"><h1>중간고사 학습 계획표</h1><div class="sub">2026.03 — 2026.05 · 고1</div></div>
+
+  <div class="sec">매일 루틴</div>
+  <table>
+    <tr><th style="width:110px">시간대</th><th>월·수·금</th><th>화·목</th><th>토·일</th></tr>
+    <tr>
+      <td class="lbl">기상~등교</td>
+      <td>6시 기상 → 수영</td>
+      <td>6시 기상 → <strong>아침 자습 1시간 20분</strong><br><span class="muted">어제 빨간펜 복습</span></td>
+      <td>8시 기상</td>
+    </tr>
+    <tr>
+      <td class="lbl">방과후<br>(도서관)</td>
+      <td>~약 1시간 30분<br>빨간펜 30분 + 검정펜 1시간</td>
+      <td>~약 1시간<br>검정펜 1시간 (오늘 정리)</td>
+      <td>스터디카페 9시~19시<br>(10시간)</td>
+    </tr>
+    <tr>
+      <td class="lbl">스터디카페</td>
+      <td>18시~19시 (1시간)</td>
+      <td>18시~19시 (1시간)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td class="lbl">저녁 후</td>
+      <td>20시~23시 30분 (3.5시간)</td>
+      <td>20시~23시 30분 (3.5시간)</td>
+      <td>20시~23시 30분 (3.5시간)</td>
+    </tr>
+  </table>
+
+  <div class="sec">집중 공부 시간 배분 (매일)</div>
+  <div class="tgrid">
+    <div class="tcard"><div class="sub2">수학</div><div class="dur" style="color:var(--math)">1h 30m</div><div class="note">고정</div></div>
+    <div class="tcard"><div class="sub2">영어</div><div class="dur" style="color:var(--eng)">1h 00m</div><div class="note">고정</div></div>
+    <div class="tcard"><div class="sub2">국어</div><div class="dur" style="color:var(--kor)">1h 00m</div><div class="note">고정</div></div>
+    <div class="tcard"><div class="sub2">순환 과목</div><div class="dur" style="color:#555">1h 00m</div><div class="note">과학→사회→과학→한국사</div></div>
+  </div>
+
+  <p class="fn">* 백지정리(검정펜·빨간펜)는 루틴 시간에 포함 / 집중 공부는 스터디카페·저녁 시간 활용<br>
+  * 디지털 기기는 막히는 부분 확인 시에만 사용 — 공부 시작은 항상 교재부터</p>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+  <div class="hdr"><h1>3월 주간 세부 계획</h1><div class="sub">2026.03.09 — 03.31</div></div>
+
+  <div class="sec">주차별 과목 계획</div>
+  <table>
+    <tr>
+      <th style="width:72px">과목</th>
+      <th>1주차 (3/9~3/13)</th>
+      <th>2주차 (3/16~3/20)</th>
+      <th>3주차 (3/23~3/27)</th>
+      <th>4주차 (3/28~3/31)</th>
+    </tr>
+    <tr>
+      <td class="lbl"><span class="badge math">수학</span></td>
+      <td><strong>다항식</strong><br>쎈 A·B·C<br>채점 시작 + 오답노트</td>
+      <td><strong>방정식과 부등식 ①</strong><br>쎈 A·B·C<br>오답노트 병행</td>
+      <td><strong>방정식과 부등식 ②</strong><br>쎈 A·B·C<br>오답노트 병행</td>
+      <td><strong>도형의 방정식</strong><br>쎈 A·B·C<br>시험범위 완료 목표</td>
+    </tr>
+    <tr>
+      <td class="lbl"><span class="badge eng">영어</span></td>
+      <td>EBSi 예비과정 마무리<br>워드마스터 Day 15~21</td>
+      <td>EBSi 예비과정 완료<br>워드마스터 Day 22~28<br><span class="muted">교과서 나오면 지문 시작</span></td>
+      <td>교과서 지문 복습<br>(내용이해+문법 백지정리)<br>워드마스터 Day 29~35</td>
+      <td>교과서 기출문제집 시작<br>(능률)<br>워드마스터 Day 36~42</td>
+    </tr>
+    <tr>
+      <td class="lbl"><span class="badge kor">국어</span></td>
+      <td>개념나비효과<br><strong>시 파트 4~7강</strong><br><span class="muted">(현재 3강)</span></td>
+      <td>개념나비효과<br><strong>시 파트 8~11강</strong></td>
+      <td>개념나비효과<br><strong>시 파트 12~15강</strong><br>완료 목표</td>
+      <td>교과서 기출문제집 시작<br>교과서 작품 정리</td>
+    </tr>
+    <tr>
+      <td class="lbl"><span class="badge sci">과학</span></td>
+      <td>마더텅 기출 시작<br><strong>물질과 규칙성</strong><br>백지정리 병행</td>
+      <td>마더텅 기출<br><strong>시스템과 상호작용</strong><br>오답노트</td>
+      <td>마더텅 기출<br><strong>변화와 다양성</strong></td>
+      <td>마더텅 기출<br><strong>환경과 에너지</strong><br>오답노트 정리</td>
+    </tr>
+    <tr>
+      <td class="lbl"><span class="badge soc">사회</span></td>
+      <td>백지정리 루틴<br>수업 진도 따라가기</td>
+      <td>백지정리 루틴<br>수업 진도 따라가기</td>
+      <td>백지정리 루틴<br>선배 시험지 구하기 시도<br>시험 유형 파악</td>
+      <td>유형 파악 후<br>문제집 여부 결정</td>
+    </tr>
+    <tr>
+      <td class="lbl"><span class="badge his">한국사</span></td>
+      <td>백지정리 시작<br><strong>선사시대~고조선</strong><br>암기 중심</td>
+      <td>백지정리<br><strong>삼국시대</strong><br>암기 중심</td>
+      <td>백지정리<br><strong>남북국~고려</strong></td>
+      <td>백지정리<br><strong>1단원 마무리</strong><br>2단원 진입 준비</td>
+    </tr>
+  </table>
+
+  <p class="fn">* 수학 단원명은 공통수학1 기준 — 실제 수업 진도에 맞춰 조정<br>
+  * 통합과학·한국사 단원명은 수업 진도에 맞춰 조정</p>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page">
+  <div class="hdr"><h1>4~5월 중기 계획</h1><div class="sub">2026.04.01 — 중간고사</div></div>
+
+  <div class="sec">월별 과목 목표</div>
+  <table>
+    <tr><th style="width:72px">과목</th><th>4월 목표</th><th>중간고사 직전 (5월)</th><th style="width:160px">비고</th></tr>
+    <tr>
+      <td class="lbl"><span class="badge math">수학</span></td>
+      <td>쎈 오답노트 마무리<br>채점 분석 후 심화 문제집 결정·시작<br><span class="muted">(일품 or 올림포스 고난도)</span></td>
+      <td>심화 문제집 완료<br>취약 단원 집중 반복<br>오답 패턴 최종 정리</td>
+      <td>3월 말 채점 결과로<br>심화 난이도 결정<br>목표: <strong>1등급</strong></td>
+    </tr>
+    <tr>
+      <td class="lbl"><span class="badge eng">영어</span></td>
+      <td>교과서 기출문제집 완료<br>워드마스터 계속<br>실력 파악 후 심화 결정</td>
+      <td>교과서 지문 최종 점검<br>문법 취약 부분 정리<br>어휘 복습</td>
+      <td>A수업(교과서)+B수업(독해)<br>둘 다 대비<br>목표: <strong>1등급</strong></td>
+    </tr>
+    <tr>
+      <td class="lbl"><span class="badge kor">국어</span></td>
+      <td>교과서 기출문제집 완료<br>실력 파악 후 심화 결정<br>교과서 작품 심화 이해</td>
+      <td>출제 작품 최종 암기<br>문학 개념 재정리<br>기출 오답 패턴 점검</td>
+      <td>내신 = 정해진 지문<br>이해+암기 병행<br>목표: <strong>1등급</strong></td>
+    </tr>
+    <tr>
+      <td class="lbl"><span class="badge sci">과학</span></td>
+      <td>마더텅 2회독<br>오답 집중 반복<br>선생님 수업 밀착 따라가기</td>
+      <td>전 단원 오답 최종 정리<br>선생님 강조 내용 점검</td>
+      <td>암기 수준은 수업 기준으로<br>목표: <strong>1등급</strong></td>
+    </tr>
+    <tr>
+      <td class="lbl"><span class="badge soc">사회</span></td>
+      <td>시험 유형 파악 완료<br>문제집 선택 후 시작</td>
+      <td>문제집 완료<br>취약 개념 재정리<br>암기 최종 점검</td>
+      <td>문제집은 유형 파악 후 선택<br>목표: <strong>1등급</strong></td>
+    </tr>
+    <tr>
+      <td class="lbl"><span class="badge his">한국사</span></td>
+      <td>2단원 진입 + 문제집 시작<br>인과관계 중심 정리</td>
+      <td>1단원 암기 최종 점검<br>2단원 흐름·인과 정리<br>문제 풀이 마무리</td>
+      <td>1단원=암기, 2단원=흐름<br>공부 방식 구분<br>목표: <strong>1등급</strong></td>
+    </tr>
+  </table>
+
+  <div class="sec">전략 메모</div>
+  <div class="twocol">
+    <div class="box">
+      <div class="bt">심화 단계 결정 원칙</div>
+      직전 단계 실력 파악 후 결정.<br>
+      3월 말 쎈 채점 → 수학 심화 결정<br>
+      4월 기출 완료 → 영어·국어 심화 결정<br>
+      <span class="muted">급하게 결정하지 말 것</span>
+    </div>
+    <div class="box">
+      <div class="bt">출제자 패턴 분석</div>
+      첫 시험 후 선생님 출제 패턴 분석.<br>
+      세부 암기 요구 수준 파악 → 공부 강도 조정.<br>
+      시험 전 선배 기출 구하기 시도.<br>
+      <span class="muted">기출 = 출제자 휴리스틱 파악 도구</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
