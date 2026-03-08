@@ -17,6 +17,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#ccc;color:var(--ink);padd
 table{width:100%;border-collapse:collapse;font-size:11.5px;margin-bottom:22px;}
 th{background:var(--ink);color:#fff;padding:8px 10px;text-align:left;font-size:11px;font-weight:600;}
 td{padding:9px 10px;border:1px solid var(--border);vertical-align:top;line-height:1.7;}
+tr:nth-child(even) td{background:#f3f3eb;}
 .lbl{background:#eaeadc!important;font-weight:700;white-space:nowrap;}
 .badge{display:inline-block;padding:1px 7px;border-radius:3px;font-size:10px;font-weight:700;color:#fff;margin-bottom:3px;}
 .math{background:var(--math);}.eng{background:var(--eng);}.kor{background:var(--kor);}.sci{background:var(--sci);}.soc{background:var(--soc);}.his{background:var(--his);}
@@ -25,19 +26,23 @@ td{padding:9px 10px;border:1px solid var(--border);vertical-align:top;line-heigh
 .tcard .sub2{font-size:12px;font-weight:700;margin-bottom:4px;}
 .tcard .dur{font-family:'DM Mono',monospace;font-size:20px;font-weight:500;}
 .tcard .note{font-size:10px;color:#888;margin-top:4px;}
-.twocol{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:4px;}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
 .box{border:1.5px solid var(--border);padding:14px;font-size:11.5px;line-height:1.8;}
 .box .bt{font-weight:700;margin-bottom:6px;}
 .muted{color:#888;font-size:10.5px;}
 .fn{font-size:10.5px;color:#888;margin-top:6px;line-height:1.7;}
-@media print{body{background:#fff;padding:0;}.page{box-shadow:none;margin:0;padding:28px;max-width:100%;page-break-after:always;}}
+strong{font-weight:700;}
+@media print{
+  body{background:#fff;padding:0;}
+  .page{box-shadow:none;margin:0;padding:28px;max-width:100%;page-break-after:always;}
+  .page:last-child{page-break-after:auto;}
+}
 </style>
 </head>
 <body>
 
-<!-- PAGE 1 -->
 <div class="page">
-  <div class="hdr"><h1>중간고사 학습 계획표</h1><div class="sub">2026.03 — 2026.05 · 고1</div></div>
+  <div class="hdr"><h1>중간고사 학습 계획표</h1><div class="sub">2026.03 — 2026.05 · 고1 · 2022 개정 교육과정</div></div>
 
   <div class="sec">매일 루틴</div>
   <table>
@@ -49,10 +54,10 @@ td{padding:9px 10px;border:1px solid var(--border);vertical-align:top;line-heigh
       <td>8시 기상</td>
     </tr>
     <tr>
-      <td class="lbl">방과후<br>(도서관)</td>
-      <td>~약 1시간 30분<br>빨간펜 30분 + 검정펜 1시간</td>
-      <td>~약 1시간<br>검정펜 1시간 (오늘 정리)</td>
-      <td>스터디카페 9시~19시<br>(10시간)</td>
+      <td class="lbl">방과후 (도서관)</td>
+      <td>약 1시간 30분<br>빨간펜 30분 + 검정펜 1시간</td>
+      <td>약 1시간<br>검정펜 1시간 (오늘 정리)</td>
+      <td>스터디카페 9시~19시 (10시간)</td>
     </tr>
     <tr>
       <td class="lbl">스터디카페</td>
@@ -75,14 +80,19 @@ td{padding:9px 10px;border:1px solid var(--border);vertical-align:top;line-heigh
     <div class="tcard"><div class="sub2">국어</div><div class="dur" style="color:var(--kor)">1h 00m</div><div class="note">고정</div></div>
     <div class="tcard"><div class="sub2">순환 과목</div><div class="dur" style="color:#555">1h 00m</div><div class="note">과학→사회→과학→한국사</div></div>
   </div>
-
   <p class="fn">* 백지정리(검정펜·빨간펜)는 루틴 시간에 포함 / 집중 공부는 스터디카페·저녁 시간 활용<br>
   * 디지털 기기는 막히는 부분 확인 시에만 사용 — 공부 시작은 항상 교재부터</p>
 </div>
 
-<!-- PAGE 2 -->
 <div class="page">
   <div class="hdr"><h1>3월 주간 세부 계획</h1><div class="sub">2026.03.09 — 03.31</div></div>
+
+  <div class="sec">시험 범위 안내 (공통수학1 기준)</div>
+  <table style="margin-bottom:18px;">
+    <tr><th>시험</th><th>수학 범위</th><th>비고</th></tr>
+    <tr><td class="lbl">중간고사 (5월)</td><td><strong>I. 다항식 + II. 방정식과 부등식</strong></td><td>공통수학1 전반부</td></tr>
+    <tr><td class="lbl">기말고사</td><td><strong>III. 경우의 수 + IV. 행렬</strong></td><td>공통수학1 후반부</td></tr>
+  </table>
 
   <div class="sec">주차별 과목 계획</div>
   <table>
@@ -95,17 +105,17 @@ td{padding:9px 10px;border:1px solid var(--border);vertical-align:top;line-heigh
     </tr>
     <tr>
       <td class="lbl"><span class="badge math">수학</span></td>
-      <td><strong>다항식</strong><br>쎈 A·B·C<br>채점 시작 + 오답노트</td>
-      <td><strong>방정식과 부등식 ①</strong><br>쎈 A·B·C<br>오답노트 병행</td>
-      <td><strong>방정식과 부등식 ②</strong><br>쎈 A·B·C<br>오답노트 병행</td>
-      <td><strong>도형의 방정식</strong><br>쎈 A·B·C<br>시험범위 완료 목표</td>
+      <td><strong>I. 다항식 ①</strong><br>다항식의 연산<br>쎈 A·B·C + 채점 시작<br>오답노트 시작</td>
+      <td><strong>I. 다항식 ②</strong><br>나머지 정리와 인수분해<br>쎈 A·B·C<br>오답노트 병행</td>
+      <td><strong>II. 방정식과 부등식 ①</strong><br>복소수 + 이차방정식<br>쎈 A·B·C<br>오답노트 병행</td>
+      <td><strong>II. 방정식과 부등식 ②</strong><br>여러 가지 방정식·부등식<br>쎈 A·B·C<br>중간고사 범위 완료 목표</td>
     </tr>
     <tr>
       <td class="lbl"><span class="badge eng">영어</span></td>
       <td>EBSi 예비과정 마무리<br>워드마스터 Day 15~21</td>
       <td>EBSi 예비과정 완료<br>워드마스터 Day 22~28<br><span class="muted">교과서 나오면 지문 시작</span></td>
       <td>교과서 지문 복습<br>(내용이해+문법 백지정리)<br>워드마스터 Day 29~35</td>
-      <td>교과서 기출문제집 시작<br>(능률)<br>워드마스터 Day 36~42</td>
+      <td>교과서 기출문제집 시작 (능률)<br>워드마스터 Day 36~42</td>
     </tr>
     <tr>
       <td class="lbl"><span class="badge kor">국어</span></td>
@@ -116,10 +126,10 @@ td{padding:9px 10px;border:1px solid var(--border);vertical-align:top;line-heigh
     </tr>
     <tr>
       <td class="lbl"><span class="badge sci">과학</span></td>
-      <td>마더텅 기출 시작<br><strong>물질과 규칙성</strong><br>백지정리 병행</td>
-      <td>마더텅 기출<br><strong>시스템과 상호작용</strong><br>오답노트</td>
-      <td>마더텅 기출<br><strong>변화와 다양성</strong></td>
-      <td>마더텅 기출<br><strong>환경과 에너지</strong><br>오답노트 정리</td>
+      <td>마더텅 기출 시작<br><strong>과학의 기초</strong><br>백지정리 병행</td>
+      <td>마더텅 기출<br><strong>물질의 구조와 성질</strong><br>오답노트</td>
+      <td>마더텅 기출<br><strong>힘과 운동</strong></td>
+      <td>마더텅 기출<br><strong>에너지와 열</strong><br>오답노트 정리</td>
     </tr>
     <tr>
       <td class="lbl"><span class="badge soc">사회</span></td>
@@ -131,28 +141,26 @@ td{padding:9px 10px;border:1px solid var(--border);vertical-align:top;line-heigh
     <tr>
       <td class="lbl"><span class="badge his">한국사</span></td>
       <td>백지정리 시작<br><strong>선사시대~고조선</strong><br>암기 중심</td>
-      <td>백지정리<br><strong>삼국시대</strong><br>암기 중심</td>
-      <td>백지정리<br><strong>남북국~고려</strong></td>
-      <td>백지정리<br><strong>1단원 마무리</strong><br>2단원 진입 준비</td>
+      <td>백지정리<br><strong>여러 나라 성장 + 삼국 발전</strong><br>암기 중심</td>
+      <td>백지정리<br><strong>남북국시대 + 고려 성립</strong></td>
+      <td>백지정리<br><strong>고려의 발전</strong><br>2단원 진입 준비</td>
     </tr>
   </table>
-
-  <p class="fn">* 수학 단원명은 공통수학1 기준 — 실제 수업 진도에 맞춰 조정<br>
+  <p class="fn">* 수학 단원: 2022 개정 공통수학1 기준 — 쎈 실제 쪽수에 맞춰 조정<br>
   * 통합과학·한국사 단원명은 수업 진도에 맞춰 조정</p>
 </div>
 
-<!-- PAGE 3 -->
 <div class="page">
-  <div class="hdr"><h1>4~5월 중기 계획</h1><div class="sub">2026.04.01 — 중간고사</div></div>
+  <div class="hdr"><h1>4~5월 중기 계획</h1><div class="sub">2026.04.01 — 중간고사 (5월)</div></div>
 
   <div class="sec">월별 과목 목표</div>
   <table>
     <tr><th style="width:72px">과목</th><th>4월 목표</th><th>중간고사 직전 (5월)</th><th style="width:160px">비고</th></tr>
     <tr>
       <td class="lbl"><span class="badge math">수학</span></td>
-      <td>쎈 오답노트 마무리<br>채점 분석 후 심화 문제집 결정·시작<br><span class="muted">(일품 or 올림포스 고난도)</span></td>
+      <td>쎈 오답노트 마무리<br>채점 분석 후 심화 문제집 결정·시작<br><span class="muted">(일품 or 올림포스 고난도)</span><br>범위: 다항식 + 방정식과 부등식</td>
       <td>심화 문제집 완료<br>취약 단원 집중 반복<br>오답 패턴 최종 정리</td>
-      <td>3월 말 채점 결과로<br>심화 난이도 결정<br>목표: <strong>1등급</strong></td>
+      <td>3월 말 채점으로 난이도 결정<br>목표: <strong>1등급</strong></td>
     </tr>
     <tr>
       <td class="lbl"><span class="badge eng">영어</span></td>
@@ -180,13 +188,13 @@ td{padding:9px 10px;border:1px solid var(--border);vertical-align:top;line-heigh
     </tr>
     <tr>
       <td class="lbl"><span class="badge his">한국사</span></td>
-      <td>2단원 진입 + 문제집 시작<br>인과관계 중심 정리</td>
+      <td><strong>2단원 진입</strong> + 문제집 시작<br>인과관계 중심 정리</td>
       <td>1단원 암기 최종 점검<br>2단원 흐름·인과 정리<br>문제 풀이 마무리</td>
       <td>1단원=암기, 2단원=흐름<br>공부 방식 구분<br>목표: <strong>1등급</strong></td>
     </tr>
   </table>
 
-  <div class="sec">전략 메모</div>
+  <div class="sec" style="margin-top:4px;">전략 메모</div>
   <div class="twocol">
     <div class="box">
       <div class="bt">심화 단계 결정 원칙</div>
